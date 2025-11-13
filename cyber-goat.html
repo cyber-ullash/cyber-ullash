@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Ullash | Profile</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" href="https://raw.githubusercontent.com/cyber-ullash/cyber-ullash/refs/heads/main/adnan/CYBER-ULLASH.png">
+
+    <style>
+        :root {
+            --font-family: "Quicksand", sans-serif;
+            
+            /* Light Mode */
+            --primary-color: #1d52f2;
+            --secondary-color: #ff0061;
+            --text-dark: #324e63;
+            --text-light: #000000;
+            --card-bg: #ffffff;
+            --body-bg: #f0f2f5;
+            --shadow-subtle: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08);
+            --shadow-heavy: 0 10px 20px rgba(0, 0, 0, 0.15), 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark Mode*/
+        .dark-mode {
+            --text-dark: #cccccc;
+            --text-light: #ffffff;
+            --card-bg: #1e2a38;
+            --body-bg: #0f172a;
+            --shadow-heavy: 0 10px 20px rgba(0, 0, 0, 0.4), 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+
+        html {
+            position: relative;
+            overflow-x: hidden !important;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-dark);
+            background: #000;
+            transition: background 0.5s, color 0.5s; 
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative; 
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(100, 100, 255, 0.05) 0%, transparent 50%);
+            z-index: -2;
+            animation: galaxy-move 120s linear infinite;
+        }
+
+        @keyframes galaxy-move {
+            0% { background-position: 0 0, 0 0, 0 0; }
+            100% { background-position: 100% 100%, -100% -100%, 50% 50%; }
+        }
+
+        .dark-mode body {
+             background: #0f172a;
+        }
+        /* ------------------------------------- */
+
+        a, a:hover {
+            text-decoration: none;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: auto;
+            min-height: 100vh;
+            padding: 50px 20px;
+            padding-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .profile-card {
+            width: 96%;
+            min-height: 460px;
+            margin: 0;
+            box-shadow: var(--shadow-heavy);
+            background: var(--card-bg); 
+            border-radius: 18px;
+            max-width: 1000px;
+            position: relative;
+            transition: all 0.5s ease;
+        }
+        /* ---------------------------------------------------- */
+
+        .header-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+            display: flex;
+            gap: 10px;
+        }
+
+        .control-btn {
+            background: var(--card-bg);
+            color: var(--text-light);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: var(--shadow-subtle);
+            font-size: 18px;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .control-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        
+        .dark-mode .control-btn {
+            background: var(--text-dark);
+            color: var(--card-bg);
+        }
+
+        .profile-card__img {
+            width: 150px;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            z-index: 4;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(0, 0, 0, 0.15);
+            border: 5px solid var(--card-bg);
+        }
+
+        .profile-card__img img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-card__cnt {
+            margin-top: -55px;
+            text-align: center;
+            padding: 0 20px 40px 20px;
+            transition: all 0.3s;
+        }
+
+        .profile-card__name {
+            font-weight: 700;
+            font-size: 28px;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+
+        .profile-card__txt {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .profile-card-loc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 25px;
+        }
+
+        .profile-card-loc__icon {
+            font-size: 18px;
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+        
+        .profile-card__homepage span {
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--text-dark);
+            display: block;
+            max-width: 80%;
+            margin: 15px auto 30px auto;
+            line-height: 1.5;
+        }
+        
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .copy-btn:hover {
+            background: #0d3eb5;
+        }
+        
+        .skills-section {
+            padding: 20px 40px;
+            text-align: center;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            border-radius: 0 0 18px 18px;
+        }
+        .dark-mode .skills-section {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skills-section h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .skill-badge {
+            display: inline-block;
+            background: var(--body-bg);
+            color: var(--text-dark);
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .dark-mode .skill-badge {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        .profile-card-social {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 10px;
+        }
+
+        .profile-card-social__item {
+            display: inline-flex;
+            width: 55px;
+            height: 55px;
+            margin: 8px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            flex-shrink: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width: 768px) {
+            .profile-card-social__item:hover {
+                transform: translateY(-5px) scale(1.1);
+            }
+        }
+
+        .profile-card-social__item.facebook {
+            background: linear-gradient(45deg, #1877f2, #3b5998);
+            box-shadow: 0px 4px 15px rgba(24, 119, 242, 0.4);
+        }
+        .profile-card-social__item.facebook-group {
+            background: linear-gradient(45deg, #1877f2, #3b5998);
+            box-shadow: 0px 4px 15px rgba(24, 119, 242, 0.4);
+        }
+
+        .profile-card-social__item.instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            box-shadow: 0px 4px 15px rgba(220, 39, 67, 0.4);
+        }
+
+        .profile-card-social__item.github {
+            background: linear-gradient(45deg, #333333, #4b4b4b);
+            box-shadow: 0px 4px 15px rgba(51, 51, 51, 0.4);
+        }
+
+        .profile-card-ctr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .profile-card__button {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 16px; 
+            margin: 10px 10px;
+            padding: 10px 25px;
+            min-width: 140px; 
+            border-radius: 50px;
+            min-height: 45px; 
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .profile-card__button.button--blue {
+            background: linear-gradient(to right, #6b21a8, #8b5cf6); /* বেগুনি Gradient */
+            box-shadow: 0px 4px 15px rgba(139, 92, 246, 0.4);
+        }
+        
+        .profile-card__button.button--orange {
+            background: linear-gradient(45deg, #10b981, #059669); /* সবুজ Gradient */
+            box-shadow: 0px 4px 15px rgba(16, 185, 129, 0.4);
+        }
+        
+        .button--blue.pulse {
+            animation: pulse-purple 2s infinite;
+        }
+        @keyframes pulse-purple {
+            0% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(139, 92, 246, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0); }
+        }
+        
+        /* --- --- */
+        .spark {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #facc15 0%, #ef4444 30%, transparent 70%);
+            pointer-events: none;
+            transform: scale(0);
+            animation: spark-fade 0.5s ease-out forwards;
+            z-index: 9999;
+            box-shadow: 0 0 10px #facc15;
+        }
+
+        @keyframes spark-fade {
+            0% { transform: scale(0.1); opacity: 1; }
+            100% { transform: scale(3); opacity: 0; }
+        }
+        /* ------------------------------------- */
+
+    </style>
+</head>
+
+<body>
+    <audio id="background-audio" src="https://raw.githubusercontent.com/cyber-ullash/cyber-ullash/main/ghtml.mp3"
+        autoplay loop muted></audio>
+        
+    <div class="wrapper">
+        <div class="profile-card js-profile-card">
+
+            <div class="header-controls">
+                <button id="audio-toggle" class="control-btn" title="Play/Pause Background Music">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <button id="theme-toggle" class="control-btn" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <div class="profile-card__img">
+                <img src="https://raw.githubusercontent.com/cyber-ullash/cyber-ullash/refs/heads/main/adnan/CYBER-ULLASH.png"
+                    alt="Cyber Ullash Profile">
+            </div>
+
+            <div class="profile-card__cnt js-profile-cnt">
+                <div class="profile-card__name">Cyber Ullash</div>
+                <div class="profile-card__txt">Developer | <strong>Creator</strong></div>
+                
+                <div class="profile-card-loc">
+                    <i class="fa-solid fa-location-dot profile-card-loc__icon"></i>
+                    <span class="profile-card-loc__txt">
+                        Noakhali, Chittagong, Bangladesh
+                    </span>
+                </div>
+                
+                <div class="profile-card__homepage">
+                    <span id="contact-info">
+                        This is the semple profile of Cyber Ullash. Email: <a href="mailto:ullash264@gmail.com">ullash264@gmail.com</a>
+                    </span>
+                    <button class="copy-btn" id="copy-contact-btn" data-contact="ullash264@gmail.com">
+                        <i class="fas fa-copy"></i> Copy Email
+                    </button>
+                </div>
+
+                <div class="profile-card-inf__txt">
+                    Contacts Me:
+                </div>
+
+                <div class="profile-card-social">
+                    <a href="https://www.facebook.com/CYBER.ULLASH" target="_blank" class="profile-card-social__item facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mahbubullash0?igsh=MTRhd25ndjUxY2V0ZA==" target="_blank" class="profile-card-social__item instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/cyber-ullash" target="_blank" class="profile-card-social__item github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://facebook.com/groups/846348604616057/" target="_blank" class="profile-card-social__item facebook-group">
+                        <i class="fa-solid fa-users"></i>
+                    </a>
+                </div>
+
+                <div class="profile-card-ctr">
+                    <button onclick="window.open('https:\/\/www.facebook.com\/CYBER.ULLASH', '_blank')"
+                        class="profile-card__button button--blue pulse js-message-btn">Follow</button>
+                    <button onclick="window.open('https:\/\/www.facebook.com\/CYBER.ULLASH', '_blank')"
+                        class="profile-card__button button--orange">Message</button>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h4>Skills & Tech Stack</h4>
+                <div>
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Web Development</span>
+                    <span class="skill-badge">C/C++</span>
+                    <span class="skill-badge">python</span>
+                    <span class="skill-badge">team work</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const audio = document.getElementById('background-audio');
+        const audioToggle = document.getElementById('audio-toggle');
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const copyBtn = document.getElementById('copy-contact-btn');
+        const messageBtn = document.querySelector('.js-message-btn');
+
+        document.addEventListener('click', function(e) {
+            const spark = document.createElement('div');
+            spark.classList.add('spark');
+            
+            spark.style.left = e.clientX + 'px';
+            spark.style.top = e.clientY + 'px';
+            
+            document.body.appendChild(spark);
+            
+            spark.addEventListener('animationend', () => {
+                spark.remove();
+            });
+        });
+        // -------------------------------------
+
+        audioToggle.addEventListener('click', () => {
+            if (audio.paused || audio.muted) {
+                audio.muted = false;
+                audio.play().then(() => {
+                    audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                }).catch(error => {
+                    console.error("Audio playback error:", error);
+                    alert("Autoplay failed. Please ensure your browser allows media playback.");
+                });
+            } else {
+                audio.muted = true;
+                audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+            }
+        });
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            themeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
+
+        copyBtn.addEventListener('click', () => {
+            const contact = copyBtn.getAttribute('data-contact');
+            
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(contact).then(() => {
+                    copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                    setTimeout(() => {
+                        copyBtn.innerHTML = '<i class="fas fa-copy"></i> Copy Email';
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Could not copy text: ', err);
+                    alert("Copy failed. Try selecting the email manually.");
+                });
+            } else {
+                alert("Sorry, your browser does not support automatic copying.");
+            }
+        });
+        
+        setTimeout(() => {
+            messageBtn.classList.remove('pulse');
+        }, 5000);
+
+    </script>
+</body>
+
+</html>
