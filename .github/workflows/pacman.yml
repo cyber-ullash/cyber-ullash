@@ -1,29 +1,30 @@
-name: Generate Pac-Man Contribution Graph (Stable)
+name: Generate Pac-Man Contribution Graph
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" # daily
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  generate:
     permissions:
       contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
-      NODE_OPTIONS: --max-old-space-size=6144   # 🔥 Heap fix (6GB)
+      # ✅ OOM fix (increase node heap)
+      NODE_OPTIONS: --max-old-space-size=6144
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Generate Pac-Man SVG
-        uses: Platane/pacman@v1
+      - name: Generate pacman-contribution-graph.svg
+        uses: abozanona/pacman-contribution-graph@main
         with:
-          username: ${{ github.repository_owner }}
-          theme: github
+          github_user_name: ${{ github.repository_owner }}
 
-      - name: Deploy to output branch
+      - name: Push generated SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
