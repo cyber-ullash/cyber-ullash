@@ -1,9 +1,7 @@
-<!-- ===================== 01) BANNER ===================== -->
 <p align="center">
   <img src="https://i.imgur.com/WXQIgMz.jpeg" alt="Banner" width="100%" />
 </p>
 
-<!-- ===================== 02) NAME + TITLE ===================== -->
 <h1 align="center">
   <img src="./adnan/Messenger_creation_2087233985116323.jpeg" width="28" alt="icon" />
   <br/>
@@ -12,7 +10,6 @@
 
 <h2 align="center">☆ 𝐀 𝐁 𝐇 𝐑 𝐀 𝐍 𝐈 𝐋 ☆</h2>
 
-<!-- ===================== 03) TYPING INTRO ===================== -->
 <p align="center">
   <img
     src="https://readme-typing-svg.herokuapp.com?color=00FF00&size=24&center=true&vCenter=true&width=950&lines=Owner+of+CYBER+☢️+BOT+⚠️+TEAM;Professional+Messenger+%26+Telegram+Bot+Developer;Node.js+%7C+Python+%7C+API+Automation;Open+Source+Contributor+from+Bangladesh;Building+Production+Ready+Bots"
@@ -20,7 +17,6 @@
   />
 </p>
 
-<!-- ===================== 04) VIEW COUNTER + BADGES ===================== -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=cyber-ullash&label=Profile%20Views&color=brightgreen&style=for-the-badge" alt="views" />
 </p>
@@ -33,14 +29,10 @@
 
 ---
 
-<!-- ===================== 05) WELCOME + LINE DIVIDER ===================== -->
-<h2 align="center">👨‍💻 Welcome to My Developer World</h2>
-
 <p align="center">
   <img src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-1.svg" />
 </p>
 
-<!-- ===================== 06) DEV ANIMATION (NO UPLOAD) ===================== -->
 <p align="center">
   <img
     src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"
@@ -51,7 +43,6 @@
 
 ---
 
-<!-- ===================== 07) ABOUT ===================== -->
 ## 🚀 About Me
 - 🔥 Founder & Owner of **CYBER ☢️ BOT TEAM**
 - 🤖 Messenger / Telegram / Mirai / GoatBot Developer
@@ -62,45 +53,31 @@
 
 ---
 
-<!-- ===================== 08) AUTO LANGUAGE STATS (REAL DATA) ===================== -->
 ## 📊 Language Analytics (Auto / Real GitHub Data)
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=cyber-ullash&show_icons=true&hide_border=true&rank_icon=github" alt="stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyber-ullash&layout=compact&langs_count=10&hide_border=true" alt="langs" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyber-ullash&layout=compact&langs_count=10&hide_border=true" alt="toplangs" />
 </p>
 
 ---
 
-<!-- ===================== 09) ADVANCED DAILY STATS (DARK/LIGHT AUTO) ===================== -->
-## 📈 Advanced Stats (Daily Updated • Dark/Light Auto)
-
-<!-- NOTE:
-If your github_stats repo default branch is "master" instead of "main",
-just change "/main/" to "/master/" in the two URLs below. -->
-
+## 📈 Advanced Stats (Daily Updated • Auto)
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/overview.svg#gh-dark-mode-only">
-    <source media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/overview.svg#gh-light-mode-only">
-    <img alt="GitHub Overview Stats"
-      src="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/overview.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/overview.svg#gh-dark-mode-only">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/overview.svg#gh-light-mode-only">
+    <img alt="GitHub Overview Stats" src="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/overview.svg">
   </picture>
 
   <picture>
-    <source media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/languages.svg#gh-dark-mode-only">
-    <source media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/languages.svg#gh-light-mode-only">
-    <img alt="GitHub Language Stats"
-      src="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/languages.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/languages.svg#gh-dark-mode-only">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/languages.svg#gh-light-mode-only">
+    <img alt="GitHub Language Stats" src="https://raw.githubusercontent.com/cyber-ullash/github_stats/main/generated/languages.svg">
   </picture>
 </p>
 
 ---
 
-<!-- ===================== 10) TECH STACK (LOGOS) ===================== -->
 ## 🧰 Tech Stack & Skills
 
 ### 💻 Programming Languages
@@ -113,8 +90,8 @@ just change "/main/" to "/master/" in the two URLs below. -->
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="node" />
   <img src="https://img.shields.io/badge/Express.js-Framework-black?style=for-the-badge&logo=express&logoColor=white" alt="express" />
-  <img src="https://img.shields.io/badge/Facebook_Chat_API-Mirai%20%7C%20FCA-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="fb" />
-  <img src="https://img.shields.io/badge/Telegram_Bot_API-Bots-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="tg" />
+  <img src="https://img.shields.io/badge/Facebook_Chat_API-Mirai%20%7C%20FCA-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="facebook" />
+  <img src="https://img.shields.io/badge/Telegram_Bot_API-Bots-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="telegram" />
   <img src="https://img.shields.io/badge/REST_API-System-FF6F00?style=for-the-badge" alt="rest" />
 </p>
 
@@ -131,7 +108,6 @@ just change "/main/" to "/master/" in the two URLs below. -->
 
 ---
 
-<!-- ===================== 11) TROPHIES ===================== -->
 ## 🏆 GitHub Achievements
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=cyber-ullash&theme=matrix&no-frame=true&row=1&column=6" alt="trophies" />
@@ -139,7 +115,6 @@ just change "/main/" to "/master/" in the two URLs below. -->
 
 ---
 
-<!-- ===================== 12) STREAK ===================== -->
 ## 🔥 GitHub Streak
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=cyber-ullash&theme=highcontrast&hide_border=true" alt="streak" />
@@ -147,8 +122,7 @@ just change "/main/" to "/master/" in the two URLs below. -->
 
 ---
 
-<!-- ===================== 13) PAC-MAN (AUTO GENERATED → output branch) ===================== -->
-## 🟡 Pac-Man Contribution Graph (Auto • Dark/Light)
+## 🟡 Pac-Man Contribution Graph (Auto)
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)"
@@ -162,7 +136,6 @@ just change "/main/" to "/master/" in the two URLs below. -->
 
 ---
 
-<!-- ===================== 14) SNAKE (AUTO GENERATED → output branch) ===================== -->
 ## 🐍 Contribution Snake (Auto)
 <p align="center">
   <img src="https://raw.githubusercontent.com/cyber-ullash/cyber-ullash/output/github-contribution-grid-snake.svg" alt="snake" />
@@ -170,7 +143,6 @@ just change "/main/" to "/master/" in the two URLs below. -->
 
 ---
 
-<!-- ===================== 15) FEATURED PROJECTS ===================== -->
 ## 🚀 Featured Projects
 - 🤖 **CYBER GOAT BOT** — Messenger Bot Framework  
 - 🕌 **Islamick Chat Bot** — 24/7 Islamic Reminder Bot  
@@ -179,7 +151,6 @@ just change "/main/" to "/master/" in the two URLs below. -->
 
 ---
 
-<!-- ===================== 16) CURRENT WORK ===================== -->
 ## 🧠 Currently Working On
 - 🔧 Advanced Messenger Bot Framework
 - 🌐 Public AI Image & Tool APIs
@@ -187,7 +158,6 @@ just change "/main/" to "/master/" in the two URLs below. -->
 
 ---
 
-<!-- ===================== 17) VISION ===================== -->
 ## 🎯 Vision
 - Build reliable open-source bot ecosystems
 - Help Bangladeshi developers grow
@@ -195,11 +165,10 @@ just change "/main/" to "/master/" in the two URLs below. -->
 
 ---
 
-<!-- ===================== 18) CONNECT ===================== -->
 ## 🌐 Connect With Me
 <p align="center">
   <a href="https://t.me/Online_income_bd7187">
-    <img src="https://img.shields.io/badge/Telegram-Channel-26A5E4?style=for-the-badge&logo=telegram" alt="telegram" />
+    <img src="https://img.shields.io/badge/Telegram-Channel-26A5E4?style=for-the-badge&logo=telegram" alt="telegram-channel" />
   </a>
   <a href="https://github.com/cyber-ullash">
     <img src="https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github" alt="follow" />
@@ -216,7 +185,6 @@ just change "/main/" to "/master/" in the two URLs below. -->
 
 ---
 
-<!-- ===================== 20) FOOTER ===================== -->
 <p align="center">
   <img src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-1.svg" />
 </p>
